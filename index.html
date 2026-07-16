@@ -122,15 +122,15 @@
         warning = !warning;
 
         if (warning) {
-          motorBody.setAttribute('color', '#ef5350');
-          warningLamp.setAttribute('color', '#ff1744');
-          warningLamp.setAttribute('material', 'emissive', '#ff1744');
+          motorBody.setAttribute('color', '#FF00CC');
+          warningLamp.setAttribute('color', '#FF0066');
+          warningLamp.setAttribute('material', 'emissive', '#FF0066');
           arLabel.setAttribute('value', 'MOTOR M1\nSTATUS: WARNING');
           statusButton.textContent = 'เปลี่ยนเป็นปกติ';
         } else {
-          motorBody.setAttribute('color', '#1976d2');
-          warningLamp.setAttribute('color', '#00e676');
-          warningLamp.setAttribute('material', 'emissive', '#00c853');
+          motorBody.setAttribute('color', '#99FF99');
+          warningLamp.setAttribute('color', '##99FF66');
+          warningLamp.setAttribute('material', 'emissive', '#99FFFF');
           arLabel.setAttribute('value', 'MOTOR M1\nSTATUS: NORMAL');
           statusButton.textContent = 'จำลองคำเตือน';
         }
@@ -187,7 +187,7 @@
         radius="0.32"
         height="0.72"
         segments-radial="32"
-        color="#1976d2"
+        color="#330066"
         metalness="0.25"
         roughness="0.55"
       ></a-cylinder>
@@ -198,7 +198,7 @@
         rotation="0 0 90"
         radius="0.27"
         height="0.12"
-        color="#90a4ae"
+        color="#330099"
       ></a-cylinder>
 
       <!-- Shaft assembly: parent fixes the shaft direction; child spins locally -->
@@ -221,7 +221,7 @@
         id="warning-lamp"
         position="0 0.87 0"
         radius="0.075"
-        color="#00e676"
+        color="#FF6600"
         material="emissive: #00c853; emissiveIntensity: 0.8"
       ></a-sphere>
 
@@ -233,7 +233,7 @@
         rotation="-90 0 0"
         align="center"
         width="2.4"
-        color="#ffffff"
+        color="#99FFFF"
         side="double"
       ></a-text>
     </a-marker>
